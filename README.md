@@ -8,7 +8,7 @@
 - Spring Data JPA
 - PostgreSQL Driver
 - Thymeleaf (뷰 템플릿 엔진)
-
+```
 src
 └── main
 ├── java
@@ -22,7 +22,7 @@ src
 ├── static <-- 정적 파일 (CSS, JS 등)
 ├── templates <-- HTML 템플릿 (Thymeleaf 등)
 └── application.yml <-- 설정 파일
-
+```
 Spring MVC의 역활을 위해
 
 
