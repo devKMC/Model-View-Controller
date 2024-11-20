@@ -11,17 +11,17 @@
 
 src
 └── main
-    ├── java
-    │   └── com.example.mvc_pattern_practice
-    │       ├── controller       <-- 요청을 처리하는 컨트롤러
-    │       ├── service          <-- 비즈니스 로직
-    │       ├── repository       <-- 데이터베이스와의 상호작용
-    │       ├── model            <-- 데이터베이스 엔티티 (Dept, Emp 등)
-    │       └── MvcPatternPracticeApplication.java  <-- 메인 애플리케이션 실행 파일
-    └── resources
-        ├── static               <-- 정적 파일 (CSS, JS 등)
-        ├── templates            <-- HTML 템플릿 (Thymeleaf 등)
-        └── application.yml      <-- 설정 파일
+├── java
+│ └── com.example.mvc_pattern_practice
+│ ├── controller <-- 요청을 처리하는 컨트롤러
+│ ├── service <-- 비즈니스 로직
+│ ├── repository <-- 데이터베이스와의 상호작용
+│ ├── model <-- 데이터베이스 엔티티 (Dept, Emp 등)
+│ └── MvcPatternPracticeApplication.java <-- 메인 애플리케이션 실행 파일
+└── resources
+├── static <-- 정적 파일 (CSS, JS 등)
+├── templates <-- HTML 템플릿 (Thymeleaf 등)
+└── application.yml <-- 설정 파일
 
 Spring MVC의 역활을 위해
 
