@@ -7,4 +7,5 @@ import com.example.mvc_pattern_practice.model.Dept;
 
 public interface DeptRepository extends JpaRepository<Dept, Integer> {
 	List<Dept> findByDname(String dname);
+	
 }

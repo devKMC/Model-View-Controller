@@ -16,10 +16,11 @@ public class DeptController {
     @Autowired
     private DeptService deptService;
 
-    @GetMapping("/depts")
+    @GetMapping("/depts") 
     public String getDepts(Model model) {
         List<Dept> depts = deptService.getAllDepts();
         model.addAttribute("depts", depts);
         return "dept-list";
     }
 }
+
