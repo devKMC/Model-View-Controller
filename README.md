@@ -4,7 +4,7 @@
 1. **직원 목록 페이지**:
     - URL: `http://localhost:8080/emps`
     - 직원 목록을 조회하는 페이지입니다.
-    ![Employee List](https://github.com/your-username/your-repo-name/path/to/EmployeeList.png)
+    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\EmployeeList.png" width="300" height="300"/>
 
 2. **부서 목록 페이지**:
     - URL: `http://localhost:8080/deps`
@@ -13,7 +13,7 @@
 3. **직원 추가 페이지**:
     - URL: `http://localhost:8080/emps/{emptno}`
     - 직원 정보를 추가할 수 있는 페이지입니다.
-    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\CreateEmployee.png" width="400" height="400"/>
+    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\CreateEmployee.png" width="300" height="300"/>
 
 4. **부서 추가 페이지**:
     - URL: `http://localhost:8080/deps/{deptno}`
@@ -21,7 +21,7 @@
 
 5. **직원 수정 페이지**:
     - URL: `http://localhost:8080/emps/edit/{emptno}`
-    ![Edit Employee](https://github.com/your-username/your-repo-name/path/to/EditEmployee.png)
+    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\EditEmployee.png" width="300" height="300"/>
 
 ## 프로젝트 설정:
 - **Project**: Maven Project
