@@ -6,7 +6,7 @@
 - **URL**: `http://localhost:8080/emps`
 - 직원 목록을 조회하는 페이지입니다.
   
- <img src="mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/EmployeeList.png" width="400" height="auto" />
+<img src="mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/EmployeeList.png" width="400" height="auto" />
 
 ---
 
@@ -20,7 +20,7 @@
 - **URL**: `http://localhost:8080/emps/{emptno}`
 - 직원 정보를 추가할 수 있는 페이지입니다.
 
-  <img src="mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/CreateEmployee.png" width="400" height="auto" />
+<img src="mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/CreateEmployee.png" width="400" height="auto" />
 
 ---
 
@@ -32,8 +32,9 @@
 
 ### 5. **직원 수정 페이지**
 - **URL**: `http://localhost:8080/emps/edit/{emptno}`
-  
-  <img src="mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/EditEmployee.png" width="400" height="auto" />
+- 직원의 정보를 수정할 수 있는 페이지입니다.
+
+<img src="mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/EditEmployee.png" width="400" height="auto" />
 
 ---
 
