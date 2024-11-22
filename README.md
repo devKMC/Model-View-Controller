@@ -13,7 +13,7 @@
 3. **직원 추가 페이지**:
     - URL: `http://localhost:8080/emps/{emptno}`
     - 직원 정보를 추가할 수 있는 페이지입니다.
-    ![고객 생성](public/images/CreateEmployee.png)
+    ![고객 생성](mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\CreateEmployee.png)
 
 4. **부서 추가 페이지**:
     - URL: `http://localhost:8080/deps/{deptno}`
