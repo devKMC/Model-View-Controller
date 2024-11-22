@@ -13,7 +13,7 @@
 3. **직원 추가 페이지**:
     - URL: `http://localhost:8080/emps/{emptno}`
     - 직원 정보를 추가할 수 있는 페이지입니다.
-    ![Create Employee](https://github.com/your-username/your-repo-name/path/to/CreateEmployee.png)
+    <img src="public/images/CreateEmployee.png" width="600" height="600"/>
 
 4. **부서 추가 페이지**:
     - URL: `http://localhost:8080/deps/{deptno}`
