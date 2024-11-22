@@ -1,28 +1,41 @@
 # MVC 패턴 연습 프로젝트
 
 ## URL 접근 방법
-1. **직원 목록 페이지**:
-    - URL: `http://localhost:8080/emps`
-    - 직원 목록을 조회하는 페이지입니다.
-    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\EmployeeList.png" width="300" height="300"/>
 
-2. **부서 목록 페이지**:
-    - URL: `http://localhost:8080/deps`
-    - 부서 목록을 조회하는 페이지입니다.
+### 1. **직원 목록 페이지**
+- **URL**: `http://localhost:8080/emps`
+- 직원 목록을 조회하는 페이지입니다.
+  
+  ![직원 목록 페이지](mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/EmployeeList.png)
 
-3. **직원 추가 페이지**:
-    - URL: `http://localhost:8080/emps/{emptno}`
-    - 직원 정보를 추가할 수 있는 페이지입니다.
-    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\CreateEmployee.png" width="300" height="300"/>
+---
 
-4. **부서 추가 페이지**:
-    - URL: `http://localhost:8080/deps/{deptno}`
-    - 부서 정보를 추가할 수 있는 페이지입니다.
+### 2. **부서 목록 페이지**
+- **URL**: `http://localhost:8080/deps`
+- 부서 목록을 조회하는 페이지입니다.
 
-5. **직원 수정 페이지**:
-    - URL: `http://localhost:8080/emps/edit/{emptno}`
-    <img src="mvc-pattern-practice\src\main\java\com\example\mvc_pattern_practice\public\images\EditEmployee.png" width="300" height="200"/>
+---
 
+### 3. **직원 추가 페이지**
+- **URL**: `http://localhost:8080/emps/{emptno}`
+- 직원 정보를 추가할 수 있는 페이지입니다.
+
+  ![직원 추가 페이지](mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/CreateEmployee.png)
+
+---
+
+### 4. **부서 추가 페이지**
+- **URL**: `http://localhost:8080/deps/{deptno}`
+- 부서 정보를 추가할 수 있는 페이지입니다.
+
+---
+
+### 5. **직원 수정 페이지**
+- **URL**: `http://localhost:8080/emps/edit/{emptno}`
+  
+  ![직원 수정 페이지](mvc-pattern-practice/src/main/java/com/example/mvc_pattern_practice/public/images/EditEmployee.png)
+
+---
 ## 프로젝트 설정:
 - **Project**: Maven Project
 - **Language**: Java
