@@ -2,20 +2,26 @@
 
 ## URL 접근 방법
 1. **직원 목록 페이지**:
-    - URL: `http://localhost:8080/employees`
+    - URL: `http://localhost:8080/emps`
     - 직원 목록을 조회하는 페이지입니다.
+    ![Employee List](https://github.com/your-username/your-repo-name/path/to/EmployeeList.png)
 
 2. **부서 목록 페이지**:
-    - URL: `http://localhost:8080/departments`
+    - URL: `http://localhost:8080/deps`
     - 부서 목록을 조회하는 페이지입니다.
 
 3. **직원 추가 페이지**:
-    - URL: `http://localhost:8080/employees/new`
+    - URL: `http://localhost:8080/emps/{emptno}`
     - 직원 정보를 추가할 수 있는 페이지입니다.
+    ![Create Employee](https://github.com/your-username/your-repo-name/path/to/CreateEmployee.png)
 
 4. **부서 추가 페이지**:
-    - URL: `http://localhost:8080/departments/new`
+    - URL: `http://localhost:8080/deps/{deptno}`
     - 부서 정보를 추가할 수 있는 페이지입니다.
+
+5. **직원 수정 페이지**:
+    - URL: `http://localhost:8080/emps/edit/{emptno}`
+    ![Edit Employee](https://github.com/your-username/your-repo-name/path/to/EditEmployee.png)
 
 ## 프로젝트 설정:
 - **Project**: Maven Project

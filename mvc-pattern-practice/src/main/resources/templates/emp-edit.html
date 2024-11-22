@@ -2,21 +2,89 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>Edit Employee</title>
+    <style>
+        /* 공통 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group label {
+            width: 35%;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            width: 60%;
+            padding: 5px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button, a.button-link {
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        button:hover, a.button-link:hover {
+            background-color: #0056b3;
+        }
+
+        a.button-link {
+            display: inline-block;
+        }
+    </style>
 </head>
 <body>
     <h1>Edit Employee</h1>
-    <form th:action="@{/emps/edit/{id}(id=${emp.empno})}" method="post">
-        <label for="ename">Employee Name:</label>
-        <input type="text" id="ename" name="ename" th:value="${emp.ename}" required><br><br>
-
-        <label for="job">Job:</label>
-        <input type="text" id="job" name="job" th:value="${emp.job}" required><br><br>
-
-        <label for="sal">Salary:</label>
-        <input type="number" id="sal" name="sal" th:value="${emp.sal}" required><br><br>
-
-        <button type="submit">Update Employee</button>
+    <form th:action="@{/emps/edit/{id}(id=${emp.empno})}" method="post" class="form-container">
+        <div class="form-group">
+            <label for="ename">Employee Name:</label>
+            <input type="text" id="ename" name="ename" th:value="${emp.ename}" required>
+        </div>
+        <div class="form-group">
+            <label for="job">Job:</label>
+            <input type="text" id="job" name="job" th:value="${emp.job}" required>
+        </div>
+        <div class="form-group">
+            <label for="sal">Salary:</label>
+            <input type="number" id="sal" name="sal" th:value="${emp.sal}" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Update Employee</button>
+            <a th:href="@{/emps}" class="button-link">Back to Employee List</a>
+        </div>
     </form>
-    <a th:href="@{/emps}">Back to Employee List</a>
 </body>
 </html>
