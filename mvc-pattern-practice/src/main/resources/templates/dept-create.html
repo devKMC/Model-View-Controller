@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Department</title>
+    <style>
+        /* 공통 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group label {
+            width: 35%;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-group input {
+            width: 60%;
+            padding: 5px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button, a.button-link {
+            padding: 10px 20px;
+            background-color: #e0e0e0; /* 수정된 색상 */
+            color: #000; /* 수정된 색상 */
+            border: 1px solid #ccc; /* 수정된 색상 */
+            border-radius: 3px; /* 수정된 색상 */
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px; /* 동일한 폰트 사이즈 */
+            line-height: 1.5; /* 동일한 line-height */
+        }
+
+        button:hover, a.button-link:hover {
+            background-color: #d6d6d6; /* 수정된 hover 색상 */
+        }
+
+        .add-btn {
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Department</h1>
+    <form th:action="@{/depts}" method="post" class="form-container">
+        <div class="form-group">
+            <label for="dname">Department Name:</label>
+            <input type="text" id="dname" name="dname" required>
+        </div>
+        <div class="form-group">
+            <label for="loc">Location:</label>
+            <input type="text" id="loc" name="loc" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Create Department</button>
+            <a th:href="@{/depts}" class="button-link">Cancel</a>
+        </div>
+    </form>
+</body>
+</html>
