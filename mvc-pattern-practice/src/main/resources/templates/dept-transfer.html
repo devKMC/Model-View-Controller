@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Department Transfer</title>
+    <style>
+        /* 공통 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .form-group label {
+            width: 35%;
+            text-align: right;
+            margin-right: 10px;
+        }
+
+        .form-group input, .form-group select {
+            width: 60%;
+            padding: 5px;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        button, a.button-link {
+            padding: 10px 20px;
+            background-color: #e0e0e0;
+            color: #000;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        button:hover, a.button-link:hover {
+            background-color: #d6d6d6;
+        }
+
+        .add-btn {
+            margin-bottom: 10px;
+            padding: 8px 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Department Transfer</h1>
+    <form th:action="@{/dept-transfer}" method="post" class="form-container">
+        <div class="form-group">
+            <label for="empno">Employee Number:</label>
+            <select id="empno" name="empno" required>
+                <option th:each="emp : ${employees}" th:value="${emp.empno}" th:text="${emp.ename}"></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="oldDeptno">Old Department:</label>
+            <select id="oldDeptno" name="oldDeptno" required>
+                <option th:each="dept : ${depts}" th:value="${dept.deptno}" th:text="${dept.dname}"></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="newDeptno">New Department:</label>
+            <select id="newDeptno" name="newDeptno" required>
+                <option th:each="dept : ${depts}" th:value="${dept.deptno}" th:text="${dept.dname}"></option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="transferDate">Transfer Date:</label>
+            <input type="date" id="transferDate" name="transferDate" required>
+        </div>
+        <div class="form-actions">
+            <button type="submit">Transfer Employee</button>
+            <a th:href="@{/depts}" class="button-link">Cancel</a>
+        </div>
+    </form>
+</body>
+</html>
